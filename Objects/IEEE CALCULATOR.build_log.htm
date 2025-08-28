@@ -1,0 +1,121 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.42.0.0
+Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: kevin wolpesreveldes@outlook.com, uaa, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.42.0.0
+Toolchain Path:  C:\Users\wolpe\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.23
+Assembler:       Armasm.exe V6.23
+Linker/Locator:  ArmLink.exe V6.23
+Library Manager: ArmAr.exe V6.23
+Hex Converter:   FromElf.exe V6.23
+CPU DLL:         SARMCM3.DLL V5.42.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.14.0
+Dialog DLL:      TCM.DLL V1.56.6.0
+ 
+<h2>Project:</h2>
+C:\REPOASM\IEEE 754 ASM CALCULATOR\IEEE CALCULATOR.uvprojx
+Project File Date:  08/27/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.23', folder: 'C:\Users\wolpe\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target_1'
+assembling startup_stm32f411xe.s...
+"CALCULATOR.s", line 446 (column 9): Warning: A1865W: '#' not seen before constant expression
+  446 000003e0  MOV R1,'0'
+                       ^
+"CALCULATOR.s", line 469 (column 9): Warning: A1865W: '#' not seen before constant expression
+  469 00000422  MOV R1,'+'
+                       ^
+"CALCULATOR.s", line 471 (column 9): Warning: A1865W: '#' not seen before constant expression
+  471 0000042a  MOV R1,'I'
+                       ^
+"CALCULATOR.s", line 473 (column 9): Warning: A1865W: '#' not seen before constant expression
+  473 00000432  MOV R1,'N'
+                       ^
+"CALCULATOR.s", line 475 (column 9): Warning: A1865W: '#' not seen before constant expression
+  475 0000043a  MOV R1,'F'
+                       ^
+"CALCULATOR.s", line 483 (column 9): Warning: A1865W: '#' not seen before constant expression
+  483 00000454  MOV R1,'-'
+                       ^
+"CALCULATOR.s", line 485 (column 9): Warning: A1865W: '#' not seen before constant expression
+  485 0000045c  MOV R1,'I'
+                       ^
+"CALCULATOR.s", line 487 (column 9): Warning: A1865W: '#' not seen before constant expression
+  487 00000464  MOV R1,'N'
+                       ^
+"CALCULATOR.s", line 489 (column 9): Warning: A1865W: '#' not seen before constant expression
+  489 0000046c  MOV R1,'F'
+                       ^
+"CALCULATOR.s", line 755 (column 9): Warning: A1865W: '#' not seen before constant expression
+  755 00000726  MOV R1,'E'
+                       ^
+"CALCULATOR.s", line 757 (column 9): Warning: A1865W: '#' not seen before constant expression
+  757 0000072e  MOV R1,'R'
+                       ^
+"CALCULATOR.s", line 759 (column 9): Warning: A1865W: '#' not seen before constant expression
+  759 00000736  MOV R1,'R'
+                       ^
+"CALCULATOR.s", line 761 (column 9): Warning: A1865W: '#' not seen before constant expression
+  761 0000073e  MOV R1,'O'
+                       ^
+"CALCULATOR.s", line 763 (column 9): Warning: A1865W: '#' not seen before constant expression
+  763 00000746  MOV R1,'R'
+                       ^
+"CALCULATOR.s", line 849: Warning: A1876W: Use of '|' as a synonym for the :OR: operator is deprecated.
+  849 000007f2  ORR R1,#(7 << 24)|(7 << 28);
+"CALCULATOR.s", line 718: Warning: A1581W: Added 2 bytes of padding at address 0x6b6
+  718 000006b8  LTORG         
+0 Errors, 16 Warnings
+assembling CALCULATOR.s...
+compiling system_stm32f4xx.c...
+linking...
+Program Size: Code=2216 RO-data=408 RW-data=64 ZI-data=1536  
+".\Objects\IEEE CALCULATOR.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.2.0.pack
+                ARM::CMSIS@6.2.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.1
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.3.1.1.pack
+                Keil::STM32F4xx_DFP@3.1.1
+                STMicroelectronics STM32F4 Series Device Support
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil::STM32F4xx_DFP@2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/wolpe/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include
+  C:/Users/wolpe/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.1
+
+   * Component: Keil::Device:Startup@2.6.3
+      Source file:   MDK/Device/Source/ARM/STM32F4xx_OTP.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f411xe.s
+      Include file:  Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+      Source file:   MDK/Device/Source/ARM/STM32F411xx_OPT.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
